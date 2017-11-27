@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table Avec Pagination Vuejs</title>
+    <script src="js/crudAvecFetchAvecTable.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="reponseGET" class="response"></div>
+        <div>GET en fetch/Ajax correspondant à la première requête de l'exemple précédent:
+            <button
+                    onclick="getRequest1()">Clicker
+            </button>
+        </div>
+        <div id="reponseGETenTableau" class="response"></div>
+        <button id="previous" v-on:click="getPaginationRequest">Previous</button>
+        <button id="next" v-on:click="getPaginationRequest">Next</button>
+    </div>
+
+    <script src="js/crudAvecFetchAvecTableEnVuejs.js"></script>
+</body>
+</html>
